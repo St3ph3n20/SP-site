@@ -1,0 +1,206 @@
+@import 'config';
+@import 'utilities';
+
+// General Styles
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: $background-color;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+//Logo
+#logo {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin: 1rem;
+    //padding: 1rem 1rem;
+}
+
+//Main nav
+#main-nav {
+    background: $main-color;
+    display: flex;
+    justify-content: space-between;
+   
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li, a {
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.35rem;
+        margin: 0 0.25rem;
+
+        &:hover {
+            background: $main-text-color;
+            border-radius: 5px;
+        }
+    }
+}
+
+.logo-box {
+    background: #8f394e;
+    text-align: center;
+}
+
+
+
+//Header
+#header {
+    &-home {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        //margin-top: -4rem;
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $main-text-color;
+            border: 3px blue solid;
+            width: 100%;
+            padding: 0 1rem;
+            //height: 10%;
+            //overflow: hidden;
+
+            
+            
+            .bio-image {
+                background: url(/dist/img/SP.jpeg) no-repeat center center/cover;
+                display: block;
+                height: 350px;
+                width: 350px;
+                border-radius: 50%;
+                margin-right: 4rem;
+
+            }
+
+            .image-container {
+                flex: 0 0 auto;
+                display: flex;
+                justify-content: center;
+                padding: 0 15px;
+            }
+
+            h1 {
+                font-size: 4rem;
+                
+            }
+
+            .intro-msg {
+                text-align: left;
+                max-width: 650px;
+                line-height: 1.3;
+
+                div {
+                    text-align: center;
+                }
+            }
+
+        
+        }
+    }
+
+}
+
+// Section: Contact
+#contact {
+
+
+    .envelope {
+    //display: flex;
+    //text-align: center;
+    //justify-content: space-between;
+
+        i {
+            color: $main-color;
+
+        }
+        
+        a {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .text-fields {
+        display: grid;
+        grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message';
+        grid-gap: 1.2rem;
+        margin-bottom: 1.2rem;
+
+        //Grid Areas
+        .name-input {
+            grid-area: name;
+        }
+        .subject-input {
+            grid-area: subject;
+        }
+        .email-input {
+            grid-area: email;
+        }
+        .phone-input {
+            grid-area: phone;
+        }
+        .message-input {
+            grid-area: message;
+            height: 100px;
+        }
+
+        .text-input {
+            padding: 0.5rem 1rem;
+            //font-size: 1rem;
+            color: $main-text-color;
+        }  
+    }
+
+    button[type='submit'] {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+    } 
+}
+
+//Footer
+#main-footer {
+    background-color: #fff;
+
+    .footer-content {
+        margin-top: 1rem;
+    }
+}
+
+@import 'media';

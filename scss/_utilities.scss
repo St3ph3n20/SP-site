@@ -1,0 +1,124 @@
+header {
+    //margin-bottom: 2rem;
+    border: 1px red solid;
+}
+
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    border: 1px blue solid;
+}
+
+.lead {
+    color: $main-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.subtitle {
+    display: block;
+    color: $main-text-color;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: $main-text-color;
+
+    &-email {
+        margin-left: 0.3rem;
+    }
+}
+
+//Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+//MArgin
+.my {
+    &-n {
+        margin: 0.2rem 0 1rem;
+    }
+    &-1 {
+        margin: 1rem 0;
+    }
+    &-2 {
+        margin: 2rem 0;
+    }
+    &-3 {
+        margin: 3rem 0;
+    }
+    &-4 {
+        margin: 4rem 0;
+    }
+    &-5 {
+        margin: 5rem 0;
+    }
+    &-6 {
+        margin: 6rem 0;
+    }
+}
+
+.bottom-line {
+    display: block;
+    height: 1px;
+    width: 30rem;
+    background: #676766;
+    margin: 0 auto 1rem auto;;
+}
+
+.line-margin-top {
+    margin-top: 4rem;
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    //justify-content: center;
+
+    &-main {
+        @extend %btn-shared;
+        color: #fff;
+        background-color: $main-color;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: $main-text-color;
+        }
+    }
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 3.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    &-text {
+        line-height: 1.75;
+    }
+}
