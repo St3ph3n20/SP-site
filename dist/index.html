@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/main.css">
     <title>SP | Personal Website</title>
 </head>
-<body>
+<body id="home">
     <!--Nav-->
     <nav id="main-nav">
         <div class="logo-box"><h2 id="logo">SP</h2></div>
         <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home" class="current">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!--<li><a href="#resume">Resume</a></li>-->
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <!--Header-->
@@ -68,18 +68,64 @@
          <div class="container">
              <h1 class="lead py-2 text-center">SKILLS</h1>
              <div class="card">
-                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, at! Tenetur vero ex, 
-                     reprehenderit fugiat, non laborum vitae eius iure aliquam cupiditate recusandae 
-                     nam temporibus exercitationem sed. Velit, omnis quasi? Officiis esse quia, illum doloribus 
-                     blanditiis saepe vero quod adipisci tempore facere dolore, alias aliquid dignissimos 
-                     repellat recusandae quas sit?
- 
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, at! Tenetur vero ex, 
-                     reprehenderit fugiat, non laborum vitae eius iure aliquam cupiditate recusandae 
-                     nam temporibus exercitationem sed. Velit, omnis quasi? Officiis esse quia, illum doloribus 
-                     blanditiis saepe vero quod adipisci tempore facere dolore, alias aliquid dignissimos 
-                     repellat recusandae quas sit?
-                 </p>
+                 <div class="skills-grid">
+                     <ul class="skills-list">
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/html.svg" alt="HTML">
+                                 <p>HTML</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/css.svg" alt="CSS">
+                                 <p>CSS</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/sass.svg" alt="Sass">
+                                 <p>Sass</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/AI.svg" alt="Adobe Illustrator">
+                                 <p>Adobe Illustrator</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/AP.svg" alt="Adobe Phototshop">
+                                 <p>Adobe Photoshop</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/javascript.svg" alt="Javascript">
+                                 <p>Javascript</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/git.svg" alt="GIT">
+                                 <p>GIT</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/vscode.svg" alt="VS Code">
+                                 <p>VS CODE</p>
+                             </div>
+                         </li>
+                         <li>
+                             <div class="skill-container">
+                                 <img src="/dist/img/excel.svg" alt="Excel">
+                                 <p>Excel</p>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
              </div>
          </div>
      </section>
@@ -120,6 +166,11 @@
          </div>
      </footer>
 
-    
+      <!--JqueryCDN-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     
+      <!--Local JS File-->
+ 
+      <script src="js/main.js"></script>
 </body>
 </html>

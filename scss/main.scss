@@ -46,6 +46,8 @@ img {
 #main-nav {
     background: $main-color;
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
    
 
@@ -88,9 +90,10 @@ img {
             align-items: center;
             justify-content: center;
             color: $main-text-color;
-            border: 3px blue solid;
+            //border: 5px red solid;
             width: 100%;
             padding: 0 1rem;
+            //background: aqua;
             //height: 10%;
             //overflow: hidden;
 
@@ -103,6 +106,10 @@ img {
                 width: 350px;
                 border-radius: 50%;
                 margin-right: 4rem;
+                //box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+
+
+
 
             }
 
@@ -133,6 +140,27 @@ img {
     }
 
 }
+// Section: Skills
+.skills-grid {
+    text-align: center;
+    font-size: 0.6rem;
+
+    li img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15%;
+        grid-row-gap: 10%;
+
+    }
+}
+
+
+
 
 // Section: Contact
 #contact {
