@@ -1,6 +1,6 @@
 header {
     //margin-bottom: 2rem;
-    border: 1px red solid;
+    //border: 1px red solid;
 }
 
 .container {
@@ -30,6 +30,10 @@ header {
 
     &-email {
         margin-left: 0.3rem;
+    }
+
+    &-left {
+        text-align: left;
     }
 }
 
@@ -92,6 +96,8 @@ header {
     transition: all 0.5s;
     border: none;
     cursor: pointer;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px 5px 15px 5px rgba(236, 235, 235, 0); 
+    box-shadow: 0px 10px 13px -7px #000000, 1px 5px 15px 5px rgba(236, 235, 235, 0);
 }
 
 .btn {
@@ -107,16 +113,29 @@ header {
             background-color: $main-text-color;
         }
     }
+
+    &-contact {
+        @extend %btn-shared;
+        color: #fff;
+        background-color: $main-color;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: $main-text-color;
+        }
+    }
 }
 
 .card {
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
     background: #fff;
     padding: 3.5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-bottom: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px 5px 15px 5px rgba(236, 235, 235, 0); 
+    box-shadow: 0px 10px 13px -7px #000000, 1px 5px 15px 5px rgba(236, 235, 235, 0);
 
     &-text {
         line-height: 1.75;
