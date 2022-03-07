@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import "glide";
 
 // General Styles
 
@@ -49,6 +50,7 @@ img {
     position: sticky;
     top: 0;
     justify-content: space-between;
+    z-index: 1;
     
    
 
@@ -147,6 +149,7 @@ img {
 .skills-grid {
     text-align: center;
     font-size: 0.6rem;
+    margin-bottom: 1rem;
 
     li img {
         width: 50px;
@@ -162,7 +165,31 @@ img {
     }
 }
 
+//Section Resume
+.glide {
+    //display: flex;
+    .work-history{
+        opacity: 1;
+    }
 
+    .arrows-wide-left {
+        position: absolute;
+        top: 50%;
+        //z-index: 1;
+        transform: translateY(-50%);
+        left: 1rem;
+    }
+
+    .arrows-wide-right {
+        position: absolute;
+        top: 50%;
+        //z-index: 1;
+        transform: translateY(-50%);
+        right: 1rem;
+    }
+
+
+}
 
 
 // Section: Contact
