@@ -36,6 +36,15 @@
     #about {
         //margin: -1rem;
     }
+
+    //Section Resume
+    .swiper-button-next {
+        display: none;
+    }
+    
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media(max-width: 520px) {
@@ -84,28 +93,13 @@
     }
 
     //Section Resume
-.glide {
-
-    .glide__arrow {
-        
+    .swiper-button-next {
+        display: none;
     }
-
-    .arrows-wide-left {
-        left: 0rem;
-        
-        //padding-right: 30rem;
+    
+    .swiper-button-prev {
+        display: none;
     }
-
-    .arrows-wide-right {
-        right: 0rem;
-    }
-
-    .work-history {
-        border: 2px blue solid;
-    }
-
-
-}
 
     //Contact
     #contact {
