@@ -166,30 +166,34 @@ img {
 }
 
 //Section Resume
-.glide {
-    //display: flex;
-    .work-history{
-        opacity: 1;
-    }
-
-    .arrows-wide-left {
-        position: absolute;
-        top: 50%;
-        //z-index: 1;
-        transform: translateY(-50%);
-        left: 1rem;
-    }
-
-    .arrows-wide-right {
-        position: absolute;
-        top: 50%;
-        //z-index: 1;
-        transform: translateY(-50%);
-        right: 1rem;
-    }
-
-
+.swipper {
+    background: grey;
+    //position: relative;
+    padding-bottom: 5rem;
+    z-index: 2;
+    
 }
+
+.swiper-button-next {
+    color: $main-color;
+}
+
+.swiper-button-prev {
+    color: $main-color;
+}
+
+.swiper-pagination {
+    margin-top: 10rem;
+}
+
+.swiper-pagination-clickable {
+    background: $main-color;
+}
+
+.swiper-pagination-bullet {
+    background: $main-color;
+}
+
 
 
 // Section: Contact

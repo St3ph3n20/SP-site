@@ -282,20 +282,25 @@ img {
     grid-column-gap: 15%;
     grid-row-gap: 10%; }
 
-.glide .work-history {
-  opacity: 1; }
+.swipper {
+  background: grey;
+  padding-bottom: 5rem;
+  z-index: 2; }
 
-.glide .arrows-wide-left {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem; }
+.swiper-button-next {
+  color: #9a3c4e; }
 
-.glide .arrows-wide-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1rem; }
+.swiper-button-prev {
+  color: #9a3c4e; }
+
+.swiper-pagination {
+  margin-top: 10rem; }
+
+.swiper-pagination-clickable {
+  background: #9a3c4e; }
+
+.swiper-pagination-bullet {
+  background: #9a3c4e; }
 
 #contact .envelope {
   text-align: left; }
@@ -348,7 +353,11 @@ img {
         overflow: hidden;
         margin: 0; }
       #header-home .header-content .intro-msg {
-        text-align: center; } }
+        text-align: center; }
+  .swiper-button-next {
+    display: none; }
+  .swiper-button-prev {
+    display: none; } }
 
 @media (max-width: 520px) {
   #main-nav {
@@ -365,12 +374,10 @@ img {
       font-size: 1rem; }
     #header-home .header-content .intro-msg h1 {
       font-size: 2.5rem; }
-  .glide .arrows-wide-left {
-    left: 0rem; }
-  .glide .arrows-wide-right {
-    right: 0rem; }
-  .glide .work-history {
-    border: 2px blue solid; }
+  .swiper-button-next {
+    display: none; }
+  .swiper-button-prev {
+    display: none; }
   #contact .text-fields {
     grid-template-areas: 'name' 'email' 'subject' 'phone' 'message'; }
   .bottom-line {
