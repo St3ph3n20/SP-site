@@ -169,7 +169,7 @@ img {
 .swipper {
     background: grey;
     //position: relative;
-    margin-bottom: 1rem;
+    padding-bottom: 5rem;
     z-index: 2;
     
 }
@@ -180,6 +180,10 @@ img {
 
 .swiper-button-prev {
     color: $main-color;
+}
+
+.swiper-pagination {
+    margin-top: 10rem;
 }
 
 .swiper-pagination-clickable {

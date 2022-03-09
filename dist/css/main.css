@@ -284,7 +284,7 @@ img {
 
 .swipper {
   background: grey;
-  margin-bottom: 1rem;
+  padding-bottom: 5rem;
   z-index: 2; }
 
 .swiper-button-next {
@@ -292,6 +292,9 @@ img {
 
 .swiper-button-prev {
   color: #9a3c4e; }
+
+.swiper-pagination {
+  margin-top: 10rem; }
 
 .swiper-pagination-clickable {
   background: #9a3c4e; }
